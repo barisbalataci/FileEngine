@@ -16,12 +16,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileEngine.DataAccess", "Fi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileEngine.DataTypes", "FileEngine.DataTypes\FileEngine.DataTypes.csproj", "{B28B7D35-DD90-410C-A3E3-586D18C1D647}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileEngine.Engine", "FileEngine.Engine\FileEngine.Engine.csproj", "{132C8572-1406-4688-9E3F-BB49CEF64704}"
-	ProjectSection(ProjectDependencies) = postProject
-		{470385B9-1A49-4646-A36C-C387C22D5169} = {470385B9-1A49-4646-A36C-C387C22D5169}
-		{EBCA4DFD-C5E5-454F-A6D0-E32977C9BB69} = {EBCA4DFD-C5E5-454F-A6D0-E32977C9BB69}
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileEngine.Server", "FileEngine.Server\FileEngine.Server.csproj", "{470385B9-1A49-4646-A36C-C387C22D5169}"
 	ProjectSection(ProjectDependencies) = postProject
 		{BA528E01-5979-488C-AAE8-8B8D15D60095} = {BA528E01-5979-488C-AAE8-8B8D15D60095}
@@ -32,6 +26,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileEngine.Shared", "FileEngine.Shared\FileEngine.Shared.csproj", "{EBCA4DFD-C5E5-454F-A6D0-E32977C9BB69}"
 	ProjectSection(ProjectDependencies) = postProject
 		{B28B7D35-DD90-410C-A3E3-586D18C1D647} = {B28B7D35-DD90-410C-A3E3-586D18C1D647}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileEngine.Engine", "FileEngine.Engine\FileEngine.Engine.csproj", "{570E12B1-7066-4E3C-8ECD-1CF501DAFF62}"
+	ProjectSection(ProjectDependencies) = postProject
+		{470385B9-1A49-4646-A36C-C387C22D5169} = {470385B9-1A49-4646-A36C-C387C22D5169}
+		{EBCA4DFD-C5E5-454F-A6D0-E32977C9BB69} = {EBCA4DFD-C5E5-454F-A6D0-E32977C9BB69}
 	EndProjectSection
 EndProject
 Global
@@ -52,10 +52,6 @@ Global
 		{B28B7D35-DD90-410C-A3E3-586D18C1D647}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B28B7D35-DD90-410C-A3E3-586D18C1D647}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B28B7D35-DD90-410C-A3E3-586D18C1D647}.Release|Any CPU.Build.0 = Release|Any CPU
-		{132C8572-1406-4688-9E3F-BB49CEF64704}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{132C8572-1406-4688-9E3F-BB49CEF64704}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{132C8572-1406-4688-9E3F-BB49CEF64704}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{132C8572-1406-4688-9E3F-BB49CEF64704}.Release|Any CPU.Build.0 = Release|Any CPU
 		{470385B9-1A49-4646-A36C-C387C22D5169}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{470385B9-1A49-4646-A36C-C387C22D5169}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{470385B9-1A49-4646-A36C-C387C22D5169}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -64,6 +60,10 @@ Global
 		{EBCA4DFD-C5E5-454F-A6D0-E32977C9BB69}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EBCA4DFD-C5E5-454F-A6D0-E32977C9BB69}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EBCA4DFD-C5E5-454F-A6D0-E32977C9BB69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{570E12B1-7066-4E3C-8ECD-1CF501DAFF62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{570E12B1-7066-4E3C-8ECD-1CF501DAFF62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{570E12B1-7066-4E3C-8ECD-1CF501DAFF62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{570E12B1-7066-4E3C-8ECD-1CF501DAFF62}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
