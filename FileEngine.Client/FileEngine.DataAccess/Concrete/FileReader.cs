@@ -45,7 +45,7 @@ namespace FileEngine.DataAccess.Concrete
                                     else if (columnOrder[i].ToString() == "Start date")
                                     {
                                         DateTime value;
-                                        if (DateTime.TryParse(splitContent[i], out value)) s.StartDate = value;
+                                        if (DateTime.TryParse(splitContent[i],out value)) s.StartDate = value;
                                         else throw new Exception("Start Date Format is invalid.");
                                     }
                                     else if (columnOrder[i].ToString() == "Category") s.Category = splitContent[i];
@@ -62,7 +62,7 @@ namespace FileEngine.DataAccess.Concrete
                                         }
 
                                     }
-                                    else if (columnOrder[i].ToString() == "Currency") s.Currency = splitContent[i];
+                                    else if (columnOrder[i].ToString() == "Currency") s.Currency = splitContent[i]=="NULL" ? null : splitContent[i];
                                     else if (columnOrder[i].ToString() == "Complexity")
                                     {
                                         if (splitContent[i] == "Hazardous")

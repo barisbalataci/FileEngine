@@ -33,11 +33,11 @@ namespace FileEngine.Server
             }
         }
 
-        public Tuple<List<Sievo>, List<string>> ReadFile(string path)
+        public Tuple<List<Sievo>, List<string>> File(string path)
         {
             try
             {
-                this.Path = path;
+                SetPath(path);
                 return _dataService.ReadFromFile(this.Path);
             }
             catch (FileNotFoundException e)
@@ -79,6 +79,10 @@ namespace FileEngine.Server
         public string GetPath()
         {
             return Path;
+        }
+        public void SetPath(string path)
+        {
+            Path = path;
         }
     }
 }

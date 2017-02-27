@@ -47,7 +47,7 @@ namespace FileEngine.Client
                     {
                         if (args[0] == "File")
                         {
-                            tupleData = WcfHelper<IFileEngine>.CreateChannel().ReadFile(args[1]);
+                            tupleData = WcfHelper<IFileEngine>.CreateChannel().File(args[1]);
                             _path = WcfHelper<IFileEngine>.CreateChannel().GetPath();
                         }
                         else if (args[0] == "Project")

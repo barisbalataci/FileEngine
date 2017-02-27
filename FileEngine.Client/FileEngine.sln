@@ -34,6 +34,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileEngine.Engine", "FileEn
 		{EBCA4DFD-C5E5-454F-A6D0-E32977C9BB69} = {EBCA4DFD-C5E5-454F-A6D0-E32977C9BB69}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileEngine.UnitTest", "FileEngine.UnitTest\FileEngine.UnitTest.csproj", "{EA2D23ED-A694-476D-987F-B1F826890B79}"
+	ProjectSection(ProjectDependencies) = postProject
+		{470385B9-1A49-4646-A36C-C387C22D5169} = {470385B9-1A49-4646-A36C-C387C22D5169}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -64,6 +69,10 @@ Global
 		{570E12B1-7066-4E3C-8ECD-1CF501DAFF62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{570E12B1-7066-4E3C-8ECD-1CF501DAFF62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{570E12B1-7066-4E3C-8ECD-1CF501DAFF62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA2D23ED-A694-476D-987F-B1F826890B79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA2D23ED-A694-476D-987F-B1F826890B79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA2D23ED-A694-476D-987F-B1F826890B79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA2D23ED-A694-476D-987F-B1F826890B79}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
