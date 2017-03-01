@@ -14,6 +14,7 @@ namespace FileEngine.Client
             Tuple<List<Sievo>, List<string>> tupleData = null;
             try
             {
+                // Necessary argument controls
                 if (args.Length != 0)
                 {
                     if (args.Length == 1)
@@ -84,7 +85,7 @@ namespace FileEngine.Client
 
 
         }
-
+        //The WriteToConSole function is used for giving the final output related with the commands
         private static void WriteToConSole(Tuple<List<Sievo>, List<string>> tupleData)
         {
             tupleData.Item2.ForEach(o =>

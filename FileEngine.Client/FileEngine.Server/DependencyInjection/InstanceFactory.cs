@@ -8,6 +8,7 @@ namespace FileEngine.Server.DependencyInjection
 {
     public class InstanceFactory<T>
     {
+        //ninject is used for dependency injection by installed from Nuget
         public static T GetInstance()
         {
             var kernel = new StandardKernel();

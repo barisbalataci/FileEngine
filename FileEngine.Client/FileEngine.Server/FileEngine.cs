@@ -8,6 +8,7 @@ using FileEngine.Shared;
 using FileEngine.DataAccess.Abstract;
 using FileEngine.DataTypes.Concrete.Entities;
 
+// Business of the WCF service
 namespace FileEngine.Server
 {
     [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]
@@ -32,7 +33,7 @@ namespace FileEngine.Server
                 _path = value;
             }
         }
-
+        //Function which is used as the correspondent of the console command File <path>
         public Tuple<List<Sievo>, List<string>> File(string path)
         {
             try
@@ -53,6 +54,7 @@ namespace FileEngine.Server
 
 
         }
+        //Function which is used as the correspondent of the console command Project <ID>
         public Tuple<List<Sievo>, List<string>> Project(int projectID)
         {
             try
@@ -68,7 +70,7 @@ namespace FileEngine.Server
             }
         }
 
-
+        //Function which is used as the correspondent of the console command SortByStartDate
         public Tuple<List<Sievo>, List<string>> SortByStartDate()
         {
             return _dataService.ReadFromFile(this.Path,

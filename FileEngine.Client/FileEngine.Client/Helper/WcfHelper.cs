@@ -4,6 +4,7 @@ using System.ServiceModel;
 
 namespace FileEngine.Client.Helper
 {
+    // this class is developed for opening a channel between WCF service and client
     public class WcfHelper<T>
     {
         public static T CreateChannel()

@@ -5,11 +5,11 @@ using System.ServiceModel;
 
 namespace FileEngine.Shared
 {
-    [ServiceContract()]// This satisfies requirements of webservice need. It's optional
+    [ServiceContract()]
 
     public interface IFileEngine
     {
-        [OperationContract()]// This satisfies requirements of webservice need. It's optional
+        [OperationContract()]
         Tuple<List<Sievo>, List<string>> SortByStartDate();
         [OperationContract()]
         Tuple<List<Sievo>, List<string>> File(string path);
@@ -17,8 +17,9 @@ namespace FileEngine.Shared
         Tuple<List<Sievo>, List<string>> Project(int projectID);
         [OperationContract()]
         string GetPath();
-        [OperationContract()]//this contract is written for the use of unit testing
-        void SetPath(string path);
+        //this contract is written for unit testing (Normally no need to SetPath function when client have a console to set it)
+        [OperationContract()]
+        void SetPath(string path);// Unit test calls the path
 
     }
 }

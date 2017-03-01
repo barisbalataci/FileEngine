@@ -4,6 +4,7 @@ using System;
 
 namespace FileEngine.DataTypes.Concrete.Entities
 {
+    // Sievo entity (Common type) 
     public class Sievo : TEntity
     {
         public Sievo()

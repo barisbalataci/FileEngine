@@ -42,7 +42,7 @@ namespace FileEngine.UnitTest
             Tuple<List<Sievo>, List<string>> actualTuple = fileEngine.Project(projectID);
 
 
-           
+           // Tests for the List item1 that holds the data row by row
             Assert.AreEqual(expectedTuple.Item1[0].Description, actualTuple.Item1[0].Description);
             Assert.AreEqual(expectedTuple.Item1[0].Category, actualTuple.Item1[0].Category);
             Assert.AreEqual(expectedTuple.Item1[0].Responsible, actualTuple.Item1[0].Responsible);
@@ -52,7 +52,7 @@ namespace FileEngine.UnitTest
             Assert.AreEqual(expectedTuple.Item1[0].SavingsAmount, actualTuple.Item1[0].SavingsAmount);
             Assert.AreEqual(expectedTuple.Item1[0].StartDate, actualTuple.Item1[0].StartDate);
 
-
+            // Tests for the list item 2 that holds the order of the colums
             Assert.AreEqual(expectedTuple.Item2[0].ToString(), actualTuple.Item2[0].ToString());
             Assert.AreEqual(expectedTuple.Item2[1].ToString(), actualTuple.Item2[1].ToString());
             Assert.AreEqual(expectedTuple.Item2[2].ToString(), actualTuple.Item2[2].ToString());

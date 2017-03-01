@@ -12,7 +12,8 @@ namespace FileEngine.DataAccess.Concrete
     {
         private static string[] columnOrder;
 
-
+        // This function is used for reading the file by type
+        // which means the file is treated as a database entity
         public static Tuple<List<T>, List<string>> ReadFromFileByType(Type entity, string path)
         {
             IFormatProvider provider = CultureInfo.CreateSpecificCulture("en-US");

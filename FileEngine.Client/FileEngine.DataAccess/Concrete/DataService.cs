@@ -11,7 +11,8 @@ namespace FileEngine.DataAccess.Concrete
         where T : TEntity
     {
 
-
+        //This function is generic so whatever the file type is it can read the file 
+        //apply the filter
         public Tuple<List<T>, List<string>> ReadFromFile(string path,
          Expression<Func<T, bool>> filter,
          Func<IQueryable<T>, IOrderedQueryable<T>> orderBy)
